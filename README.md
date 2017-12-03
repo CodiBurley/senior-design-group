@@ -118,20 +118,29 @@ It is true that when designing any non-trivial piece of software, legal concerns
 
 
 ## Slideshow
-
+This link provides a presentation on the project: https://youtu.be/QamIhC8fg7M
 
 ## Self-Assessment
 
 
 ## Professional Biographies
 
+Links to Professional Biographies:
+- [Codi Burley](https://github.com/CodiBurley/senior-design-group/blob/master/01-bios/codiburley.md)
+- [Dominic Farolino](https://github.com/CodiBurley/senior-design-group/blob/master/01-bios/domfarolino.md)
+- [Douglas Flick](https://github.com/CodiBurley/senior-design-group/blob/master/01-bios/douglasflick.md)
+- [Daniel Wendelken](https://github.com/CodiBurley/senior-design-group/blob/master/01-bios/wendeldr.md)
 
 ## Budget
+TODO
+
 
 ### Expenses
+TODO
+
 
 ### Donated Assets
-
+TODO
 
 ## Appendix
 
