@@ -172,6 +172,8 @@ This project is interesting to me for several reasons. First, I've always had an
 Building an os from scratch is no small task. In order to complete the project I think it would be best if we first focus on porting a small preexisting RTOS into rust and work from there. There are several fully open source RTOSs that exist;  The most well known of these is FreeRTOS. The core components of this are ~ 13,000 lines of code and it is written in C. I believe we should begin by porting over the core components of this RTOS into Rust, which is ~ 4,000 lines per group member.  This will give us a decent launching point to develop any further.  To consider this project complete I would like to have a working codebase which can compile on LLVM microprocessors.
 
 
+TODO Doug add your self assessment
+
 
 ## Professional Biographies
 
