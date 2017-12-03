@@ -24,7 +24,7 @@ This repository serves as a place for the documentation of the O<sup>s</sup>xide
 
 
 ## Abstract
-
+TODO
 
 ## Project Description
 
@@ -121,6 +121,56 @@ It is true that when designing any non-trivial piece of software, legal concerns
 This link provides a presentation on the project: https://youtu.be/QamIhC8fg7M
 
 ## Self-Assessment
+Below are some self-assements made by the team members of the project
+
+### Codi Burley
+Throughout my time as a student in computer science and  a worker in the software, I’ve seen many new technologies revolutionize the way certain industries are done. This is especially apparent in the web development community, where a huge range of new tools and frameworks are developed and adopted quickly and on a regular basis. When it comes to systems level programming, however, old technologies that have historically been used in an unsafe manner are still utilized. By aiming to create a secure real time operating system in Rust, I feel that I’m giving myself the opportunity to adopt a new technology in an area that I don’t have much experience in: systems level programming. This project will give me the chance to improve my skills in an area I know little about while attempting to show that new technologies can be used in systems level programming in order to create more secure real time systems, in a time when more and more real time systems are becoming connected to the outside. My hope that is by the end of the project, even if our operating system isn’t complete, we have still shown that Rust is a technology that can and should be utilized for similar projects in the future.
+
+As a computer science student, there have been many skills I have acquired that are applicable to this senior design project. General concepts in computing, and specifically programming, were taught in the beginning of our curriculum (in Computer Science I and Computer Science II). These skills apply to almost all fields of computer science, and helped to build up the knowledge needed in order to complete some of the more advanced courses. One of the more advanced courses I took that applies to this project was Programming Languages. Because Rust is a new language, with new constructs, learning how to utilize and design programming languages has helped greatly in understanding how to learn and use Rust. Another course that will help in my contributions to this project is Operating Systems. In this course we learned the responsibilities and behaviors of many different types of operating systems. It's easy to see how a course like this would be applicable to a project that relies on the development of an operating system. 
+
+Much of my knowledge accumulated while at UC has come not only from the Computer Science curriculum, but also from co-op experience. During my time at GE Aviation as a Design Engineer, I learned the importance of redundancy and the importance of the verification of your work. It’s vital that the components of a jet engine are verifiably safe, and this is something that will be important in making a secure system like we intend to do for this project. At Kinetic Vision, I served as a software developer, and learned many good practices for managing a large software project that is in collaboration with many people. The operating system that we intend to create will likely include many components and a very large code base, which will require that the team can collaborate in a manner that is conducive of productivity. My last co-op was at NASA Ames as a Research Engineer. There I learned how to address a problem that does not have a definite answer, and how to do research in general, which will clearly help out this project. Additionally, the software I wrote at NASA was built on top of a real time operating system. This gave me some experience with how a real time operating system works.
+
+It is a reasonable question to ask why I chose to work on a project that requires writing an operating system, when I don’t in fact have any experience in writing an operating system. In the past I have been very interested in programming languages, and I have always leapt at the opportunity to apply something new in order to try it out. Rust is a language that is new to a field of programming that hasn’t had many revolutions as of late, and that gave me motivation to attempt to use it in our project. As of late, I have also been interested in cyber security, along with the members of my group. This gave us a reason to look for a project that could contribute to that field. By choosing a project that requires that we write an operating system, I’ve also given myself the chance to learn how to write a kernel which is something I’ve always wanted to do, and I’m excited to see what kind of results we can get.
+	
+To get started on the project, we plan to utilize the previously written real time operating systems. Through analyzing what other real time operating systems got right, and what they did wrong, we can use open source code that will be useful, and find spots we can improve on. Because writing a real time operating system is a hefty task, it is not fully expected that our operating system will be “production ready” by the end. We expect to have an operating system that is functional, with maybe only a few necessary drivers. We hope to show that Rust can be utilized in order to create an operating system that is safe through the utilization of safe constructs in Rust. The evaluation of our project should come through the comparison of our operating system to other real time operating systems in Rust. We hope to show that our projects against some vulnerabilities that others have not.
+
+
+### Dominic Farolino
+#### Application of academic coursework
+The content provided in several courses throughout our academic career will become relevant in a practical setting. Specifically
+these courses are:
+ - Introduction to Computing Systems
+ - Data structures
+ - Operating System Concepts
+Understanding how the CPU processes instructions is extremely important for the low-level programming required at the operating system
+level. Furthermore, the kernel will need to implement many basic data structures from scratch that higher-level processes can take advantage
+of. All of this should happen while providing a process scheduling model that is secure by default. In other words, it should be impossible
+for application code to have the level of control over the computer hardware that the kernel has.
+#### Application of co-op experience
+My first two co-ops at Interactive Intelligence did very little to provide a practical environment for me to practice some
+of the low-level theory I had gained in the classroom. Luckily my third co-op with Mozilla provided me with a great opportunity
+to grow in this area! While I personally have very little real world operating systems experience on my own, the co-op at Mozilla
+has taught me much about low-level programming that I had not experienced in the classroom. Firefox must be efficient, and therefore
+interfaces directly with the OS API required to build efficient applications that interface directly with the OS API. I learned a lot
+about the general compilation process of software, how to write multiprocess applications in C++, and how system calls work within the
+kernel while providing application security. Besides allowing me to both practice and gain real world experience in this area, this co-op
+experience gave me the hunger for more of this experience that drives much of the passion I have for this senior design project.
+#### Motivation for project
+There is plenty of motivation for the type of project we’re undertaking. Chief among many OS concerns is security, which operating systems
+written in the C programming language traditionally have many issues with by default. Rust is a systems programming language that promises
+a higher level of security than C does, leading to inherently secure programs by default. We intend to put the Rust programming language to the test by attempting to create an operating system free of many of the security vulnerabilities that C-based operating systems have out of the box, and verifying the supposed security features that Rust promises.
+
+### Daniel Wendelken
+We plan to create a real time operating system (RTOS) using Rust. Rust is a low level programming language with some built in safety nets that prevent segfaults and thread safety. Real time operating systems are reliable in both security and performance in a given time-frame. The combination of the Rust and a RTOS leads to a robust and secure os.  This os can be utilized by inherently vulnerable systems like IOT devices, vehicle systems, and other embedded systems.  With the prevalence of these systems growing more secure solutions are needed.
+
+The course most relevant to this project EECE4029 Operating Systems and Systems Programming. In this course we discussed the different layers of a computer system such as the kernel, the architecture privilege rings, and networking.  Additionally we discussed concepts like paging and threading which are all relevant to creating a RTOS. A second course that be useful to this project is EECE2093C Software Engineering.  This course introduced life cycle models and requirement analysis which will be useful in the creation and execution of the project.  Some of these concepts include user stories and black-box/smoke testing.
+
+The only technical work related to this project comes from my co-op experience at the EPA.  Rust shares a lot of similarities with C++ and while at the EPA I briefly worked on a C++ application. Some non technical skills built at my other co-ops which will be useful to this project is the software management sytsem 'agile' and interpersonal skills.  While I was at Kroger we used both kanban and scrum to plan our projects.  Adapting these strategies to our project will help us complete it in an organized and timely manner. The interpersonal skills I've gained from my time at Kinetic vision will help with team communication.
+
+This project is interesting to me for several reasons. First, I've always had an interest in os operations and building a small RTOS will help me clarify and learn more about the internals of an os. I've wanted to learn about kernal development so having to develop it ourselves will force that learning.  Additionally I've recently been getting into computer security so trying to focus the os to be as secure as possible while maintaining a certain level of productivity should be interesting. While I have a base understanding of some security concepts working on this project should solidify my understanding.
+
+Building an os from scratch is no small task. In order to complete the project I think it would be best if we first focus on porting a small preexisting RTOS into rust and work from there. There are several fully open source RTOSs that exist;  The most well known of these is FreeRTOS. The core components of this are ~ 13,000 lines of code and it is written in C. I believe we should begin by porting over the core components of this RTOS into Rust, which is ~ 4,000 lines per group member.  This will give us a decent launching point to develop any further.  To consider this project complete I would like to have a working codebase which can compile on LLVM microprocessors.
+
 
 
 ## Professional Biographies
@@ -144,3 +194,12 @@ TODO
 
 ## Appendix
 
+### Research
+
+#### Tock OS - https://github.com/helena-project/tock
+Our team took the time to research another real time operating system written in Rust: Tock OS. This is an open source project with a great community, meaning that we could get a look a the code. This gives us crucial insight, as there is not that many resources related to writing operating systems in Rust, because it is a newer technology.
+
+This paper from the Tock OS team also was very useful in understanding the motivations for an RTOS:
+Nilsson, F., & Adolfsson, N. A Rust-based Runtime for the Internet of Things.
+
+TODO add more things along these lines
