@@ -61,8 +61,25 @@ We hope to be able to produce a Rust RTOS with some basic drivers (usb, network)
 ## User Stories and Design Diagrams
 
 ### User Stories
+1. As a IOT Developer, I want a secure operating system that handles real world events in a known time frame.
+2. As a Developer at a Defense Company, we need a real time operating system that would be difficult for enemies of state to penetrate.
+3. As a Developer at a conveyer belt company, we need to quickly sort items and ship them to a desired location as quickly as possible.
+4. As a Developer at aerospace systems company, we need planes that can handle environmental effects as fast as possible and safer from human programming errors.
+
 
 ### Design Diagrams
+The design diagrams are split into three different diagrams, each diagram at a higher level of abstraction than the next.
+
+#### Diagram 1
+![alt text](https://github.com/CodiBurley/senior-design-group/blob/master/04-user-stories-design-diagrams/D01.png "Design Diagram 1")
+
+#### Diagram 2
+![alt text](https://github.com/CodiBurley/senior-design-group/blob/master/04-user-stories-design-diagrams/D02.png "Design Diagram 2")
+
+#### Diagram 3
+![alt text](https://github.com/CodiBurley/senior-design-group/blob/master/04-user-stories-design-diagrams/D03.png "Design Diagram 3")
+
+
 
 ### Diagram Descriptions
 
