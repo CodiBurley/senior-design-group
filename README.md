@@ -82,21 +82,39 @@ The design diagrams are split into three different diagrams, each diagram at a h
 
 
 ### Diagram Descriptions
-
-
+TODO
 
 
 
 ## Tasks and Timeline
 
 ### Task List
+![alt text](https://github.com/CodiBurley/senior-design-group/blob/master/05-task-list/task-list-img.png "Task List")
+
 
 ### Timeline
+![alt text](https://github.com/CodiBurley/senior-design-group/blob/master/05-task-list/task-list-img.png "Task List Timeline")
 
 ### Effort Matrix
+![alt text](https://github.com/CodiBurley/senior-design-group/blob/master/05-task-list/effort-matrix.png "Task Effort Matrix")
 
 
 ## ABET Concerns
+
+#### Social
+Information Security is a pressing concern in our technical society in which internet of things (iOT) technology is being used at an exponentially increasing rate. The average consumer of iOT devices could benefit from our operating system that pushes in the direction of secure iOT applications. If iOT devices are built on top of an operating system that promises a more secure foundation, people may be more willing to adopt some iOT applications that could benefit society. If confidence in iOT security is raised, we may see an increase in iOT that is built into infrastructure which could greatly increase the quality of living. It is hard to say in what ways iOT will be used in the future, but it is clear that the possibilities are endless. By creating a real time operating system that attempts to cement a firm foundation for secure iOT, we can help to pave the way for iOT applications to be used to their full potential with a confidence in security.
+
+
+#### Economic
+While our senior design project will rely primarily on self generated code there are some economic limitations that are imposed. To begin we are constrained to the hardware we choose. In this choice we will be required to purchase a microcontroller which fits our projects needs.  This purchase will need to be self funded and more than one microcontroller may be needed to facilitate development.  Another constraint imposed on us is the use of other pre-existing RTOS codebases for reference or code-reuse. Many of these are licensed for free use but care will need to be taken to reference properly.  Overall our project should not have a large economic impact to the team or the users of the created RTOS. 
+
+
+#### Security
+A real time operating system is not designed to be general purpose, such as a phone, laptop, or desktop computer. That being said, a real time operating is designed to provide a deterministic execution pattern. These types of systems may be used by medical devices, wearable technology, assembly lines, power plants, and many more sensitive areas. In all of these cases criminals and foreign agents may attempt to exploit the system to cripple a company or governments infrastructure or do harm to individuals. Our project attempts to provide security by default. The system will be written in the programming language called rust where the focus is on preventing many of the simple errors that are commonly exploited and by preventing segmentation faults and guarantees thread safety. Overall a core part of our project is designing our real time operating system to prevent attacks and data loss.
+
+#### Legal
+It is true that when designing any non-trivial piece of software, legal concerns come into play at a regular pace. One such legal concern follows from the idea that we’re only using free and open software, and no intellectual property or copyrighted software in an invalid manner. Given the preliminary research we’ve performed, just about all of the software we’ll be referencing is open-source under an MIT license, which provides us no guarantees regarding the software we’re using in exchange for the ability to use and reproduce it in anyway we’d like. Another legal concern for the project that has the potential of cropping up much later in the future revolves around whether we’d like to provide security guarantees around our software for industry usage. Most modern day operating systems have an EAL (Evaluation Assurance Level) of 2 to 3, which is a security assessment ranking assigned by the NSA after thorough testing. The Real Time Operating Systems in charge of marshalling commands in high-risk situations are often required to have an EAL level of 5 or 6 (7 being the highest) to be considered justified. If one day, we wanted our RTOS to compete on the market for legal industry contracts, it would be in our best interest to shoot for an EAL level of 5 to 6, meaning the core security design in our RTOS would have to be rock solid. This is something to consider in the future if we were looking to have our RTOS be legally involved in high-risk situations, and is for now not a forefront concern.
+
 
 
 ## Slideshow
