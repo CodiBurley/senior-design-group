@@ -201,10 +201,8 @@ Links to Professional Biographies:
 ## Budget
 Currently our budget is $0.  The team is hoping to get ~$200 of funding to purchase a microcontroller for each team member to utilize.
 
-
 ### Expenses
 4x | Nordic Semiconductor - nRF51 DK (or similar device) | ~ $44.68 per unit
-
 
 ### Donated Assets
 No donated assets
@@ -218,5 +216,17 @@ Our team took the time to research another real time operating system written in
 
 This paper from the Tock OS team also was very useful in understanding the motivations for an RTOS:
 Nilsson, F., & Adolfsson, N. A Rust-based Runtime for the Internet of Things.
+
+#### Memory Paging Implementation - https://os.phil-opp.com/page-tables/
+Our team also took the time to research how we might implement the paging memory allocation technique in our
+Rust-based OS kernel. This page discusses how a similar OS kernel also written in rust, implemented paging. This
+project (and this post specifically) gives us a lot of information as we weight the cost of implementing such a
+technique.
+
+#### Real-Time System Scheduling Algorithms - http://research.cs.queensu.ca/home/akl/techreports/scheduling.pdf
+During our initial research phase we referenced the above paper to get an idea of how real-time systems differ
+in scheduling from traditional systems. This is especially important as most of our cumulative experience revolves
+around traditional kernels, so getting an idea of what scheduling techniques are efficient and feasible to implement
+within the space of a semester is really important.
 
 TODO add more things along these lines
