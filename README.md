@@ -55,9 +55,6 @@ Knowledge of OS kernels, embedded software programming, driver knowledge.
 #### Our Teams Approach
 We hope to be able to produce a Rust RTOS with some basic drivers (usb, network) which would run on a wider range of chips supporting llvm compilation.
 
-
-
-
 ## User Stories and Design Diagrams
 
 ### User Stories
@@ -65,7 +62,6 @@ We hope to be able to produce a Rust RTOS with some basic drivers (usb, network)
 2. As a Developer at a Defense Company, we need a real time operating system that would be difficult for enemies of state to penetrate.
 3. As a Developer at a conveyer belt company, we need to quickly sort items and ship them to a desired location as quickly as possible.
 4. As a Developer at aerospace systems company, we need planes that can handle environmental effects as fast as possible and safer from human programming errors.
-
 
 ### Design Diagrams
 The design diagrams are split into three different diagrams, each diagram at a higher level of abstraction than the next.
@@ -82,9 +78,28 @@ The design diagrams are split into three different diagrams, each diagram at a h
 
 
 ### Diagram Descriptions
-TODO
 
+The first design diagram describes, at the highest level, the world in which our RTOS kernel will operate in. We have several sources
+of input for our operating system. The system itself consists of an OS kernel running on some basic hardware, and can produce two
+different kinds of output: output visible and usable to users of the operating system, and generated output in the form of files such
+as text files, binaries, images, etc.
 
+The second design diagram elaborate a bit more on the operating system itself. We break the operating system into three parts:
+
+ - Applications: this consists of user and kernel applications that run inside the kernel. These applications (processes
+   in the kernel) are managed by algorithms in the kernel.
+ - RTOS Kernel & BSP: The kernel itself consists of the RTOS kernel code as well as the board support package (BSP) that ties
+   the kernel together with the hardware of the computer. The BSP contains a small bootloader to load the beginning and essential
+   portion of the kernel into memory, which in turn finishes loading the rest of the kernel into memory.
+ - Hardware: Everything runs on the hardware, which in the context of our project, will consist of a basic board containing a
+   Nordic Semiconductor chip.
+
+The third design diagram elaborates on how the kernel will manage applications. Any operating system kernel, at its core, consists
+of algorithms and data structures to allocate and schedule processes in order to give them CPU time. Efficient and correct CPU
+scheduling is crucial in a RTOS as processes must be guaranteed to finish by a certain time. The memory management portion of the
+kernel is responsible for allocating processes to memory such that they can be scheduled by the aforementioned process scheduler.
+Another crucial part of a RTOS is the associated timers and clocks which help us maintain the time constraints and boundaries in
+which prioritized processes must complete.
 
 ## Tasks and Timeline
 
