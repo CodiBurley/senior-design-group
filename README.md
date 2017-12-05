@@ -24,7 +24,7 @@ This repository serves as a place for the documentation of the O<sup>s</sup>xide
 
 
 ## Abstract
-TODO
+The aim of our project is to create a real-time operating system (RTOS) utilizing rust.  The RTOS will operate on a specific set of microcontrollers with hopes they can be utilized in Internet of Things (IoT) devices.  The primary goal of the RTOS is to create a responsive and secure environment for IoT operations.  Rust has been chosen due to its concurrency capabilities and its emphasis on safety.  Initial goals are to get the RTOS running.  Later small example applications will be developed for the RTOS.
 
 ## Project Description
 
@@ -184,15 +184,15 @@ Links to Professional Biographies:
 - [Daniel Wendelken](https://github.com/CodiBurley/senior-design-group/blob/master/01-bios/wendeldr.md)
 
 ## Budget
-TODO
+Currently our budget is $0.  The team is hoping to get ~$200 of funding to purchase a microcontroller for each team member to utilize.
 
 
 ### Expenses
-TODO
+4x | Nordic Semiconductor - nRF51 DK (or similar device) | ~ $44.68 per unit
 
 
 ### Donated Assets
-TODO
+No donated assets
 
 ## Appendix
 
