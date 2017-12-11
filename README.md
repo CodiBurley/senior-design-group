@@ -52,7 +52,7 @@ There are many other RTOSs which exist but only two that utilize Rust, zinc.rs a
 #### Background skills/interests applicable to problem
 Knowledge of OS kernels, embedded software programming, driver knowledge.
 
-#### Our Teams Approach
+#### Our Team's Approach
 We hope to be able to produce a Rust RTOS with some basic drivers (usb, network) which would run on a wider range of chips supporting llvm compilation.
 
 ## User Stories and Design Diagrams
