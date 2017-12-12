@@ -228,5 +228,3 @@ During our initial research phase we referenced the above paper to get an idea o
 in scheduling from traditional systems. This is especially important as most of our cumulative experience revolves
 around traditional kernels, so getting an idea of what scheduling techniques are efficient and feasible to implement
 within the space of a semester is really important.
-
-TODO add more things along these lines
