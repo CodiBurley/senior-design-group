@@ -15,13 +15,21 @@ to your Nordic Semiconductor board.
 
  1. Plug in the board via micro usb
  1. In the operating system directory, run `make flash` from shell or command prompt.
- 1. At this point, the operating system will install correctly, but to verify the binary
-    you've uploaded to run on the device is running in an OK state, check to see the if you
-    see a single LED light constantly lit up. If you see a single LED light consistently blinking,
-    the application binary you've uploaded could not be run successfully.
+ 1. At this point, the operating system will install correctly. To verify the binary you've
+    uploaded to the device has executed or is executing successfully, see the
+    [Interpreting Outputs](#interpreting-outputs) section listed below.
 
 # Pairing the OS with a Bluetooth device
 
 # How to load a binary program on the operating system
 
-# Interpreting outputs
+# Interpreting Outputs
+
+Interpreting the output of the execution of a process in the operating system is crucial. The RTOS
+provided has the ability to run `3` number of processes on the provided Nordic Semiconductor
+board. The specific process (program) number (id) that is currently executing on the board will be
+represented in binary (big-endian) on the LEDs present on the Nordic board. The fourth LED is used
+to represent the state of the current process. If the fourth LED is solid, the running process is in
+an OK execution state. If the LED is consistently blinking, the process was not able to be run correctly.
+
+TODO(): determine whether this is the functionality we want or not
