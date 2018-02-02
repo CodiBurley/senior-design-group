@@ -21,7 +21,17 @@ to your Nordic Semiconductor board.
 
 # Pairing the OS with a Bluetooth device
 
+Steps to pair
+
+1. Hold button 1 on Nordic device until all 4 leds flash
+2. While flashing press pair button on bluetooth device
+3. Wait for leds to stop flashing
+4. Devices should be paired
+
 # How to load a binary program on the operating system
+To load binary
+
+1. run `$make flash binary`. Substitute 'binary' with either path to single binary or directory of binaries. 
 
 # Interpreting Outputs
 
