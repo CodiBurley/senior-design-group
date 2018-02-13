@@ -79,4 +79,8 @@ This yielded an error, which was solvable by:
 rustup component add rust-src
 ```
 
-Which got me one step further...
+Which got me one step further...I'm now seeing
+
+```
+error: linking with `arm-none-eabi-gcc` failed: exit code: 1
+```
