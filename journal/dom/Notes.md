@@ -84,3 +84,19 @@ Which got me one step further...I'm now seeing
 ```
 error: linking with `arm-none-eabi-gcc` failed: exit code: 1
 ```
+
+Finally running the same command again for some reason...worked!
+Next we'll want to run `openocd` to open up a connection to our board on TCP port 3333 (is this
+the default for openocd?). In another terminal we can run `arm-none-eabi-gdb` on our binary found
+in the `target` folder of the [`OSxide`](https://github.com/wendeldr/OSxide.git) repository
+
+```
+// In one terminal:
+arm-none-eabi-gdb target/thumbv6m-none-eabi/debug/examples/hello
+
+// In another terminal:
+openocd -f cfg/jlink.cfg -f cfg/nordic_nrf51_dk.cfg
+```
+
+The armgdb knows to run the binary on the board because our `.gdbinit` defines
+`target remote :3333` which links to the connection that `openocd` created for us.
