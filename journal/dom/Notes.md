@@ -92,10 +92,10 @@ in the `target` folder of the [`OSxide`](https://github.com/wendeldr/OSxide.git)
 
 ```
 // In one terminal:
-arm-none-eabi-gdb target/thumbv6m-none-eabi/debug/examples/hello
+openocd -f configs/nrf51dk.cfg
 
 // In another terminal:
-openocd -f cfg/jlink.cfg -f cfg/nordic_nrf51_dk.cfg
+xargo run
 ```
 
 The armgdb knows to run the binary on the board because our `.gdbinit` defines
