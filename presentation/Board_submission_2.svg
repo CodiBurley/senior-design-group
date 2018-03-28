@@ -17,7 +17,7 @@
    id="svg8"
    inkscape:version="0.92.3 (unknown)"
    sodipodi:docname="Board_submission_2.svg"
-   inkscape:export-filename="/home/dan/git/senior-design-group/presentation/Board_submission_2.png"
+   inkscape:export-filename="/home/dan/Pictures/final.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <defs
@@ -42,11 +42,11 @@
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.32"
-     inkscape:cx="2497.1875"
-     inkscape:cy="1688.356"
+     inkscape:zoom="0.11313709"
+     inkscape:cx="3325.8802"
+     inkscape:cy="1412.8504"
      inkscape:document-units="in"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -79,7 +79,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -15893,6 +15893,16 @@ Mf8HbK6VOyeHU94AAAAASUVORK5CYII=
          x="229.02995"
          y="250.30904"
          style="stroke-width:0.26458335"></tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.26458335;stroke-opacity:1"
+       id="rect5837"
+       width="1218.097"
+       height="913.297"
+       x="0.55440962"
+       y="-616.84564"
+       inkscape:export-filename="/home/dan/Pictures/final.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
   </g>
   <g
      inkscape:groupmode="layer"
